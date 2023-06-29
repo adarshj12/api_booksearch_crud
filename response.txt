@@ -1,0 +1,13 @@
+{
+    "status": 400,
+    "message": "Book: vikram is already registered",
+    "error": "Bad Request",
+    "path": "/application-test-v1.1/books"
+}
+
+{
+    "status": 200,
+    "message": "Data Added Successfully",
+    "error": "OK",
+    "path": "/application-test-v1.1/books"
+}

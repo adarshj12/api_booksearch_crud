@@ -1,0 +1,147 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.search {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    overflow-x: initial;
+  }
+  
+  .search {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .col {
+    flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .col {
+    flex-basis: 33.33%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1535px) {
+  .col {
+    flex-basis: 25%;
+    margin-bottom: 10px;
+  }
+}
